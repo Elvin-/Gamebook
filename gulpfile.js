@@ -12,10 +12,6 @@ var uglify = require('gulp-uglify');
 var uglifycss = require('gulp-uglifycss');
 
 
-var decompress = require('gulp-decompress');
-
-var clean=require("gulp-clean");
-
 var rename=require("gulp-rename");
 var fs=require("fs");
 
