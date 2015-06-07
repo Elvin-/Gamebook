@@ -13,32 +13,27 @@ var uglifycss = require('gulp-uglifycss');
 
 
 var rename=require("gulp-rename");
+
 var fs=require("fs");
 
 var unzip=require("unzip");
 
+gulp.task('default',["compile"],function(){
+     
+});
+
 gulp.task('watch',function(){
-
-
-      gulp.watch(['**/*.coffee',"*.coffee"],function(event){
-
-      	  gulp.src(event.path,{base:__dirname}).pipe(coffee({bare:true}).on('error',gutil.log)).pipe(gulp.dest(__dirname));
-      });
-
-
-      gulp.watch(['**/*.scss'],function(event){
-
-      	  gulp.src(event.path,{base:__dirname}).pipe(sass().on('error',sass.logError)).pipe(gulp.dest(__dirname));
-      });
+     
+      gulp.watch(['**/*.coffee',"*.coffee",'**/*.scss'],["compile"]);
      
 
 
 });
 
 
-gulp.task('unzip-icomoon',function(){
+gulp.task('unzip-icomoon',function(cb){
 
-     return fs.createReadStream('temp/icomoon.zip').pipe(unzip.Extract({ path: 'temp/icomoon' }))
+     fs.createReadStream('temp/icomoon.zip').pipe(unzip.Extract({ path: 'temp/icomoon' })).on('close',cb);
 
 });
 
@@ -57,7 +52,13 @@ gulp.task('release',function(cb){
       
       gulp.src(["public/src/js/**/*.js","!public/src/js/**/*.min.js"],{base:"public/src"}).pipe(uglify()).pipe(gulp.dest("public/dist"));
    
-	  gulp.src(["public/src/css/**/*.css","!public/src/css/**/*.min.css",],{base:"public/src"}).pipe(uglifycss()).pipe(gulp.dest("public/dist"));
+	gulp.src(["public/src/css/**/*.css","!public/src/css/**/*.min.css",],{base:"public/src"}).pipe(uglifycss()).pipe(gulp.dest("public/dist"));
 
-	  cb(null)
+	cb(null)
+});
+
+
+gulp.task('compile',function(){
+   gulp.src(['./**/*.coffee','./*.coffee'],{base:"./"}).pipe(coffee({bare:true}).on('error',gutil.log)).pipe(gulp.dest("./"));
+   gulp.src("./**/*.scss",{base:"./"}).pipe(sass().on('error',sass.logError)).pipe(gulp.dest("./"));
 });
