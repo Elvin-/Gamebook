@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="/css/flat-ui.css" rel="stylesheet">
+    
+    <link href="/css/icons.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+
+  </head>
+  <body id="detail-page">
+
+    <% include header.ejs %>
+   
+    <div class="container">
+        <blockquote class="title-header">
+            <span class="icon-quotes-left"></span>
+            <h5 class="title">张三的故事</h5>
+             <small>by 飞翔的小屌</small>
+        </blockquote>
+
+        
+    </div>
+    <% include footer.ejs %>
+
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script src="/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/flat-ui.min.js"></script>
+
+    <script src="/js/app.js"></script>
+    <script>
+        Gamebook.init()
+    </script>
+
+  </body>
+</html>

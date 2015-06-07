@@ -1,14 +1,63 @@
+/* 
+
+   Page component start
+
+*/
 .navbar-summer {
   border-radius: 0px; }
 
+.pagination {
+  text-align: center; }
+
+.icon-menu:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.footer-banner {
+  min-height: 100px; }
+
+/* 
+   Page component end
+*/
+/*
+   Index page start
+*/
 .gamebox-list h3 {
   font-size: 24px; }
 
 .gamebox-list p {
   font-size: 14px; }
 
+.gamebox-item {
+  margin: 10px 0px; }
+
+.gamebox-item img {
+  max-width: 350px; }
+
+.gamebox-item .tag-group span {
+  vertical-align: text-top; }
+
 .recommended-level span {
   font-size: 18px; }
 
-.pagination {
-  text-align: center; }
+/*
+   Index page end
+*/
+/*
+    Detail page start
+*/
+#detail-page .title-header small {
+  color: #000;
+  opacity: .4; }
+
+/*
+    Detail page end
+*/

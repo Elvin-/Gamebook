@@ -16,37 +16,12 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-default navbar-summer navbar-inverse container-fluid" role="navigation">
-         <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">切换导航</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-             <a class="navbar-brand" href="#">Gamebook</a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="javascript:;">开始<span class="sr-only">(current)</span></a></li>
-                <li><a href="javascript:;">创建</a></li>
-              </ul>
-              <form class="navbar-form navbar-right" action="#" role="search">
-                  <div class="form-group">
-                    <div class="input-group">
-                      <input class="form-control" id="navbarInput-01" type="search" placeholder="Search">
-                      <span class="input-group-btn">
-                        <button type="submit" class="btn"><span class="icon-search"></span></button>
-                      </span>
-                    </div>
-                  </div>
-             </form> 
-        </div>
-    </nav>
-
+    <% include header.ejs %>
+   
     <div class="container">
         <div>
              <blockquote>
+                    <span class="icon-price-tag"></span>&nbsp;
                     <button class="btn btn-primary btn-sm btn-embossed">恐怖</button>
                     <button class="btn btn-info btn-sm btn-embossed">恋爱</button>
                     <button class="btn btn-danger btn-sm btn-embossed">我喜欢去扑街</button>
@@ -55,65 +30,55 @@
         </div>
         <div>
                     <!-- Projects Row -->
-                    <div class="row gamebox-list">
-                        <div class="col-md-4 portfolio-item gamebox-item">
+                    <div class="gamebox-list">
+                    
+                        <div class="portfolio-item gamebox-item col-md-6">
                             <a href="#">
-                                <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                                <img class="img-responsive" src="http://i1.tietuku.com/bbc83ef930971165.jpg" alt="">
                             </a>
                             <h3>
-                                <a href="#">Project Name</a>
+                                <a href="#">张三的故事</a>
                             </h3>
-                            <p class="recommended-level"><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-empty"></span><span class="icon-star-empty"></span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, g ravida pellentesque urna varius vitae.</p>
+                            <p>
+                                 <span class="recommended-level">
+                                         <span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-empty"></span><span class="icon-star-empty"></span>
+                                 </span>
+                               <span class="tag-group">
+                                    <span class="label label-danger">恋爱</span>
+                                    <span class="label label-info">恐怖</span>
+                               </span>
+                            </p>
+                            <p><span class="icon-calendar"></span>&nbsp;2014.11.10&nbsp;&nbsp;&nbsp;<span class="icon-bubble"></span>&nbsp;10&nbsp;&nbsp;<span class="icon-user"></span>&nbsp;巨屌侠</p>
+                            <p><span class="icon-quotes-left"></span>&nbsp;&nbsp;张三有些小秘密，他喜欢上了隔壁工位的王铁蛋，却不敢去泡,因为王铁蛋太帅太美丽，张三一直觉得配不上他因为张三的菊花并不紧俏</p>
 
                         </div>
-                          <div class="col-md-4 portfolio-item gamebox-item">
+                         <div class="portfolio-item gamebox-item col-md-6">
                             <a href="#">
-                                <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                                <img class="img-responsive" src="http://i1.tietuku.com/d836cac7f922d62as.jpg" alt="">
                             </a>
                             <h3>
-                                <a href="#">Project Name</a>
+                                <a href="#">小明和小红不得不说的二三事</a>
                             </h3>
-                            <p class="recommended-level"><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-empty"></span><span class="icon-star-empty"></span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, g ravida pellentesque urna varius vitae.</p>
+                            <p>
+                                 <span class="recommended-level">
+                                         <span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-empty"></span><span class="icon-star-empty"></span>
+                                 </span>
+                               <span class="tag-group">
+                                    <span class="label label-success">基佬</span>
+                               </span>
+                            </p>
+                            <p><span class="icon-calendar"></span>&nbsp;2014.11.10&nbsp;&nbsp;&nbsp;<span class="icon-bubble"></span>&nbsp;10&nbsp;&nbsp;<span class="icon-user"></span>&nbsp;巨屌侠</p>
+                            <p><span class="icon-quotes-left"></span>&nbsp;&nbsp;遇见小红的第一天，小明已经觉得全世界只有两个人，一个是他自己还有一个是他的小屌。小红的难看是很难用言语形容的</p>
 
                         </div>
-                          <div class="col-md-4 portfolio-item gamebox-item">
-                            <a href="#">
-                                <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                            </a>
-                            <h3>
-                                <a href="#">Project Name</a>
-                            </h3>
-                            <p class="recommended-level"><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-empty"></span><span class="icon-star-empty"></span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, g ravida pellentesque urna varius vitae.</p>
-                        </div>
-                         <div class="col-md-4 portfolio-item gamebox-item">
-                            <a href="#">
-                                <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                            </a>
-                            <h3>
-                                <a href="#">Project Name</a>
-                            </h3>
-                            <p class="recommended-level"><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-empty"></span><span class="icon-star-empty"></span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, g ravida pellentesque urna varius vitae.</p>
-                        </div>
-                        <div class="col-md-4 portfolio-item gamebox-item">
-                            <a href="#">
-                                <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                            </a>
-                            <h3>
-                                <a href="#">Project Name</a>
-                            </h3>
-                            <p class="recommended-level"><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-empty"></span><span class="icon-star-empty"></span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, g ravida pellentesque urna varius vitae.</p>
-                        </div>
+                        
                     </div>
                     <!-- /.row -->
         </div>
-
-        <% include pagination.ejs %>
+<!--         <% include pagination.ejs %> -->
     </div>
+    <br/><br/>
+    <% include footer.ejs %>
 
     <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
     <script src="/js/jquery.min.js"></script>
