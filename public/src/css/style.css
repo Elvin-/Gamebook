@@ -37,10 +37,10 @@
   font-size: 14px; }
 
 .gamebox-item {
-  margin: 10px 0px; }
+  padding: 20px; }
 
 .gamebox-item img {
-  max-width: 350px; }
+  max-width: 300px; }
 
 .gamebox-item .tag-group span {
   vertical-align: text-top; }
