@@ -25,7 +25,7 @@ gulp.task('default',["compile"],function(){
 gulp.task('watch',function(){
      
       gulp.watch(['**/*.coffee',"*.coffee",'**/*.scss'],["compile"]);
-     
+
 
 
 });
@@ -40,7 +40,6 @@ gulp.task('unzip-icomoon',function(cb){
 gulp.task('icons',["unzip-icomoon"],function(cb){
       gulp.src("temp/icomoon/fonts/**").pipe(gulp.dest("public/src/css/fonts"));
       gulp.src("temp/icomoon/style.css").pipe(rename("icons.css")).pipe(gulp.dest("public/src/css/"));
-
       cb(null);
 });
 
