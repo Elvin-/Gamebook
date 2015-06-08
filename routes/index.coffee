@@ -10,4 +10,7 @@ router.get '/detail',(req,res)->
 router.get '/login',(req,res)->
     res.render "login"
 
+router.get '/login2',(req,res)->
+    res.render "login2"
+
 module.exports=router
