@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
@@ -5,74 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <meta name="description" content="登录页面">
-    <meta name="author" content="ElvinLong">
-    <link rel="icon" href="/img/favicon.ico">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
 
-    <title>GameBook Login Page</title>
+    <title>Signin Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- Loading Flat UI -->
-    <link href="/css/flat-ui.css" rel="stylesheet">
-    <link href="/css/icons.css" rel="stylesheet">
-    <link href="/css/login2.css" rel="stylesheet">
-    <script src="/js/jquery.min.js"></script>
-     <script type="text/javascript">
-     $(function() {
-      var obj = $("#bg");
-      console.log(obj.height());
-     })
-
-     window.onload=function(){
-      setInterval(setHeight,100);
-     };
-
-     function setHeight() {
-      var obj = $("#bg");
-      var boxheight = obj.height() * 0.7;
-      $("#lgbox").css("height", boxheight);
-      $("#lgbox").css("padding-top", boxheight * 0.1);
-     }
-     </script>
+    <!-- Custom styles for this template -->
+    <link href="css/login2.css" rel="stylesheet">
   </head>
 
   <body>
 
     <div class="container">
-      <div class="login">
-        <div class="login-screen" id="lgbox">
-          <div class="login-icon">
-            <h4>欢迎来到 <small>Game Book</small></h4>
-          </div>
 
-          <div class="login-form">
-            <div class="row">
-              <div class="control-group col-sm-12">
-                <input type="text" class="login-field " value="" placeholder="用户名" id="login-name">
-                <label class="login-field-icon icon-user" for="login-name"></label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="control-group col-sm-12">
-                <input type="password" class="login-field" value="" placeholder="密　码" id="login-pass">
-                <label class="login-field-icon icon-lock" for="login-pass"></label>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-large btn-block" href="#">登录</a>
-            <a class="login-link" href="#">忘记密码 ?</a>
-          </div>
+      <form class="form-signin">
+      <h2 class="form-signin-heading">欢迎来到 <small>Game Book</small></h2>
+        <label for="inputName" class="sr-only">用户名</label>
+        <input type="text" id="inputName" class="form-control" placeholder="用户名" required autofocus>
+        <label for="inputPassword" class="sr-only">密码</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> 记住我
+          </label>
         </div>
-        <img class="loginBG" id="bg" src="/img/login/imac.png">
-      </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+      </form>
 
     </div> <!-- /container -->
-
   </body>
 </html>

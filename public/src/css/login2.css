@@ -1,67 +1,77 @@
-@media (min-width: 1200px)
-{
-  .container {
-    width: 970px;
-  }
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
 }
 
-.container {
-  /*min-width: 970px;*/
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
 }
-.login {
-	background:url('');
-	padding: 0;
+.form-signin-heading {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 34px;
+  opacity: .95;
+  text-align: center;
 
 }
-.loginBG {
-	width: 100%;
-	position: absolute;
-	top: 0;
 
-}
-.login-screen {
-	overflow: hidden;
-	min-height: 0;
-	padding: 0;
-	padding-top: 4%;
-	width: 100%;
-}
-.login-title {
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-.login-icon {
-	position: inherit;
-	width: 100%;
-	text-align: center;
-}
-.login-icon > h4 {
-	padding: 0;
-	display: inline;
-}
-
-.login-icon > h4 small{
-	display: inline;
+.form-signin-heading small {
   font-size: inherit;
   font-weight: 700;
   color: inherit;
 }
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+  text-align: center;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
 
-.login-form {
-	width: 60%;
-	margin: 0 auto;
-}
-.login-form .login-field {
-	width: 100%;
-}
-.login-form .login-field-icon {
-    color: #bfc9ca;
-    font-size: 20px;
-    position: absolute;    
-    top: 14px;
-    -webkit-transition: 0.25s;
-    -moz-transition: 0.25s;
-    -o-transition: 0.25s;
-    transition: 0.25s;
-    -webkit-backface-visibility: hidden; }
+.btn-primary {
+  color: #fff;
+  background-color: #1abc9c;
+  border: 1px solid #1abc9c;
+  }
+.btn-primary:hover,
+.btn-primary.hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #48c9b0;
+  border-color: #48c9b0;
+  }
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background: #16a085;
+  border-color: #16a085;
+  }
